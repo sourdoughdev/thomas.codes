@@ -1,6 +1,6 @@
 ---
 title: My Love Hate Relationship with Slack
-date: 2018/05/17
+date: 2018/06/17
 video: false
 series: slack
 ---
