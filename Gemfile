@@ -9,3 +9,4 @@ gem 'wdm', platforms: [:mswin, :mingw]
 gem "middleman-blog"
 gem "redcarpet"
 gem "builder"
+gem "nokogiri"
