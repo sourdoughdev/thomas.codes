@@ -1,0 +1,12 @@
+/* TEAM */
+
+Thomas McGoey-Smith
+http://thomas.codes / @tamcgoey
+Ottawa, ON
+
+    
+/* THANKS */
+
+Middleman (https://middlemanapp.com/)
+Netlify (https://app.netlify.com/)
+Tachyons (http://tachyons.io/)
