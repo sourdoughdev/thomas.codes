@@ -1,0 +1,9 @@
+<%= partial 'layouts/includes/header' %>
+  <div class="lh-copy">
+    <div>
+      <a href="/series" class="no-underline"><p class="upcase normal silver mb0">SERIES</p></a>
+      <h1 class="f1"><%= current_page.data.title %></h1>
+      <%= yield %>
+    </div>
+  </div>
+<%= partial 'layouts/includes/footer' %>

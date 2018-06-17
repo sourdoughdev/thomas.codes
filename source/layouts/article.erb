@@ -1,0 +1,14 @@
+<%= partial 'layouts/includes/header' %>
+  <div class="lh-copy">
+    <div>
+      <div class="fr p i gray"><%= current_page.date.strftime('%b %d, %Y') %></div>
+      <h1 class="f1 dib"><%= current_page.data.title %></h1>
+      <%= yield %>
+    </div>
+
+    <div class="mt5">
+      <%= newsletter(headline: current_page.data.newsletter&.headline || "Found something Interesting? Subscribe for Updates.", body: current_page.data.newsletter&.body || "Give me your email, and I'll send you my latest articles first.") %>
+    </div>
+
+  </div>
+<%= partial 'layouts/includes/footer' %>

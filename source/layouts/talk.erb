@@ -1,0 +1,18 @@
+<%= partial 'layouts/includes/header' %>
+  <div class="lh-copy">
+    <div>
+      <h1 class="f1 mb0"><%= current_page.data.title %></h1>
+      <p class="gray f4 mt0 mb4"><%= current_page.data.where %> - <time><%= current_page.date.strftime('%Y') %></time></p>
+
+      <% if current_page.data.video %>
+        <div>
+          <div class='vid'>
+            <iframe src='<%= current_page.data.video %>' frameborder='0' allowfullscreen></iframe>
+          </div>
+        </div>
+      <% end %>
+
+      <%= yield %>
+    </div>
+  </div>
+<%= partial 'layouts/includes/footer' %>

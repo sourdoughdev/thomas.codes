@@ -1,0 +1,27 @@
+---
+title: Slack
+layout: series/index
+blog: series
+---
+
+<% slack_series = blog.articles.select do |article|
+    article.data.series == 'slack'
+  end
+%>
+
+<div class="lh-copy mb5">
+  <p>Follow along as build out my first Slack app. Each week I'll post an update of where things are at, and what's next.</p>
+
+  <p>New here? Check out this - <%= link_to 'My Love Hate Relationship with Slack', '/series/slack/love-hate-slack/' %>.</p>
+</div>
+
+<% slack_series.each_with_index do |article, i| %>
+  <div class="fl w-100 mb4">
+    <div class="cf w-100">
+      <a href="<%= article.url %>" class="no-underline hover-gray">
+        <p class="gray f5 mt0 mb0"><time><%= article.date.strftime('%b %e %Y') %></time></p>
+        <h2 class="f3 db mt0 mb0"><%= article.data.title %></h2>
+      </a>
+    </div>
+  </div>
+<% end %>

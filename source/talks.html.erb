@@ -1,0 +1,27 @@
+---
+title: Talks
+layout: page
+blog: talks
+---
+
+<p>I've managed to give a couple of recorded public talks (some shorter and some longer). If only internal tech talks were public - <i><%= link_to 'good thing we\'re hiring', 'https://careers.shopify.com' %>!</i></p>
+
+<% blog.articles.each_with_index do |article, i| %>
+  <div class="fl w-100 mb5">
+    <div class="cf w-100">
+      <h2 class="f2 db mb0"><%= article.data.title %></h2>
+       <p class="gray f4 mt0"><%= article.data.where %> - <time><%= article.date.strftime('%Y') %></time></p>
+    </div>
+    <% if article.data.video %>
+      <div>
+        <div class='vid'>
+          <iframe src='<%= article.data.video %>' frameborder='0' allowfullscreen></iframe>
+        </div>
+      </div>
+    <% end %>
+    <div>
+      <%= article.body %>
+    </div>
+
+  </div>
+<% end %>

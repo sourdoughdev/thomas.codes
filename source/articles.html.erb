@@ -1,0 +1,17 @@
+---
+title: Articles
+layout: page
+blog: articles
+---
+
+<% blog.articles.each_with_index do |article, i| %>
+  <div class="fl w-100 mb4">
+    <div class="cf w-100">
+      <a href="<%= article.url %>" class="no-underline hover-gray">
+        <p class="gray f5 mt0 mb0"><time><%= article.date.strftime('%b %e %Y') %></time></p>
+        <h2 class="f3 db mt0 mb0"><%= article.data.title %></h2>
+      </a>
+    </div>
+  </div>
+<% end %>
+

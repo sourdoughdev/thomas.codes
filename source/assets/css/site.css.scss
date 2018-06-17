@@ -1,0 +1,81 @@
+@import "tachyons";
+@import "fonts";
+
+body {
+  background: #FFFCF7;
+  font-size: 18px;
+}
+
+.bar, .bg-bar {
+  background: #FCD37A;
+}
+
+.bg-blue {
+  background: #132E51;
+}
+
+.blue, a, .link {
+  color: #132E51;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+/* Fonts */
+
+$system-fonts: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               'helvetica neue', helvetica,
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif; 
+
+.sans-serif {
+  font-family: 'concourse_t3regular', $system-fonts;
+  font-weight: normal;
+}
+
+.b, .bold, strong, b, a:hover {
+  font-family: 'concourse_t4regular', $system-fonts;
+  font-weight: bold;
+}
+
+.i, .italic, i {
+  font-family: 'concourse_t3italic', $system-fonts;
+  font-weight: normal;
+  font-style: italic;
+}
+
+nav, .upcase, nav a:hover {
+  font-family: 'concourse_c6regular', $system-fonts;
+  font-weight: normal;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .f1, .f2, .f3, .f4, .f5 {
+  font-family: 'concourse_t4regular', $system-fonts;
+  font-weight: normal;
+}
+
+
+/* https://gist.github.com/jaicab/8799764 */
+.vid {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+}
+ 
+.vid iframe,
+.vid object,
+.vid embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

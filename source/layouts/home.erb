@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= "#{current_page.data.title}" || "Thomas McGoey-Smith" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body class="sans-serif">
+    <div class="bar w-100 h1 mb2"></div>
+    <div class="cf center w-100 w-80-l pl5-l">
+      <header class="fl dn db-m db-l w-20-ns">
+        <%= partial 'layouts/includes/nav' %>
+      </header>
+      <div class="fl w-100 w-80-ns pa3 pl5-m pl4-l">
+    <%= yield %>
+    <%= javascript_include_tag "instafeed" %>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+        get: 'user',
+        userId: '4147048087',
+        accessToken: '4147048087.1677ed0.afea05ec1d174d9cb9059492f25adaa2',
+        target: 'instagram',
+        resolution: 'standard_resolution',
+        template: '<div class="w-100 mb4"><a href="{{link}}" target="new"><img src="{{image}}"></a></div>',
+        limit: 3,
+      });
+      userFeed.run();
+    </script>
+      
+  
+<%= partial 'layouts/includes/footer' %>
