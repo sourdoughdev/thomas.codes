@@ -1,0 +1,13 @@
+---
+title: sitemap
+---
+<div class="lh-copy">
+  <% root_url = "http://thomas.codes" %>
+  <ul>
+    <% sitemap.resources.each do |page| %>
+        <% unless page.url.include?("assets") || page.url.include?("404") || page.url.include?("xml") || page.url.include?("ico") || page.url.include?("txt") %>
+            <li><a href="<%= "#{root_url}#{page.url}" %>"><%= "#{root_url}#{page.url}" %></a></li>
+        <% end %>
+    <% end %>
+  </ul>
+</div>

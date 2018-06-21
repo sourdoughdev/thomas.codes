@@ -15,6 +15,22 @@
 }
 
 @font-face {
+    font-family: 'concourse_t3bold';
+    src: url('fonts/concourse_t3_bold.woff2') format('woff2'),
+         url('fonts/concourse_t3_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'concourse_t3bolditalic';
+    src: url('fonts/concourse_t3_bold_italic.woff2') format('woff2'),
+         url('fonts/concourse_t3_bold_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'concourse_c6regular';
     src: url('fonts/concourse_c6_regular.woff2') format('woff2'),
          url('fonts/concourse_c6_regular.woff') format('woff');
