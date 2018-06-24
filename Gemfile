@@ -10,3 +10,6 @@ gem "middleman-blog"
 gem "redcarpet"
 gem "builder"
 gem "nokogiri"
+
+# Build Tools
+gem 'middleman-minify-html'
