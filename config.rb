@@ -18,6 +18,9 @@ set :images_dir, 'assets/img'
 # Pretty URLs
 activate :directory_indexes
 
+page "404.html", :directory_index => false
+
+
 # Blog
 activate :blog do |blog|
   blog.name = "articles"
