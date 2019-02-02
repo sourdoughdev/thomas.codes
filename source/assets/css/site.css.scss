@@ -7,7 +7,7 @@ body {
 }
 
 .bar, .bg-bar {
-  background: #FCD37A;
+  background: #1567C8;
 }
 
 .bg-blue {
@@ -15,11 +15,13 @@ body {
 }
 
 .blue, a, .link {
-  color: #132E51;
+  color: #155EB5;
+  border-bottom: 2px solid #1567C8!important;
 }
 
 .no-underline, a img, img, a > img {
   border: none;
+  border-bottom: none!important; 
 }
 
 /* Fonts */
