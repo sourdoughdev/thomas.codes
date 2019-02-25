@@ -7,23 +7,6 @@ public_folder: /images/uploads
 publish_mode: editorial_workflow
 
 collections:
-  #yaml middleman data example
-  - name: product
-    label: Product
-    format: yml
-    extension: yml
-    folder: data/products/
-    create: true
-    slug: '{{title}}'
-    fields:
-      - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Image, name: image, widget: image, required: true}
-
-      - {label: Weight, name: weight, widget: number}
-      - {label: Price, name: price, widget: number}
-      - {label: Body, name: body, widget: markdown}
-
 #markdown middleman blog example
   - name: articles
     label: Article
@@ -35,25 +18,27 @@ collections:
     fields:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Publish Date, name: date, widget: datetime}
+      - {label: Category, name: category, widget: relation}
       - {label: Body, name: body, widget: markdown}
-
-  - name: pages
-    label: Pages
-    files:
-      - file: "data/pages/home.yml"
-        label: Homepage
-        name: home
-        fields:
-          - label: Hero
-            name: hero
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Image, name: image, widget: image}
-          - label: Story
-            name: story
-            widget: markdown
-
+      - { 
+          label: Newsletter,
+          name: newsletter,
+          widget: object,
+          fields: [
+            { 
+              label: Headline,
+              name: headline,
+              widget: string,
+              default: "There's more to come",
+            },
+            { 
+              label: Body,
+              name: body,
+              widget: markdown,
+              default: "I'm dusting my blog off and making a point to start sharing what I know again. <b>Subscribe and follow along!</b>",
+            },
+          ],
+        }
   - name: settings
     label: Settings
     files:
