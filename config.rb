@@ -9,6 +9,8 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "/admin/*", layout: false
+
 
 # Stylesheet Directories
 set :js_dir, 'assets/js'
@@ -65,8 +67,10 @@ set :site, "https://thomas.codes"
 # Build
 configure :build do
   activate :minify_css
-  activate :minify_javascript
+  activate :minify_javascript, :ignore => "**/admin/**", compressor: ::Uglifier.new(mangle: true, compress: { drop_console: true }, output: {comments: :none})
   activate :minify_html
+
+  activate :gzip
 end
 
 # Helpers
