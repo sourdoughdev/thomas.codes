@@ -1,5 +1,3 @@
-nav_items: 
-  - {label: 'Home', path: '/'}
-  - {label: 'Products', path: '/products/'}
-  - {label: 'News', path: '/news'}
-
+categories:
+  - code: react-native
+    name: React Native
