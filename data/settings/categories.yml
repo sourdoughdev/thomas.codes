@@ -1,4 +1,7 @@
-categories: 
-  - {name: 'React Native', code: 'react-native'}
-
-
+categories:
+  - code: react-native
+    name: React Native
+  - code: rails
+    name: Rails
+  - code: graphql
+    name: GraphQL
