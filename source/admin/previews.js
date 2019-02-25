@@ -60,32 +60,6 @@ const HomePreview = ({ entry, widgetFor }) => {
   )
 }
 
-const NavigationPreview = ({ entry }) => {
-  const data = entry.get('data').toJS()
-  return (
-    <header className="header-primary">
-      <div className="logo">
-        <a href="/">
-          <img src="/images/logo.svg" alt="Kaldi"/>
-        </a>
-      </div>
-      <a className="nav-button">
-        <img src="/images/nav-open.svg" className="open"/>
-      </a>
-      <nav className="navigation" style={{ paddingRight: '40px' }}>
-        <ul>
-          {!data.nav_items ? null : data.nav_items.map((item, idx) => (
-            <li key={idx}>
-              <a href={item.path}>{item.label}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  )
-}
-
 CMS.registerPreviewTemplate('article', ArticlePreview)
 CMS.registerPreviewTemplate('product', ProductPreview)
 CMS.registerPreviewTemplate('home', HomePreview)
-CMS.registerPreviewTemplate('navigation', NavigationPreview)
