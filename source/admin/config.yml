@@ -1,10 +1,13 @@
 backend:
   name: git-gateway
 
-media_folder: source/images/uploads
-public_folder: /images/uploads
+media_folder: source/assets/img/uploads
+public_folder: /assets/img/uploads
 
 publish_mode: editorial_workflow
+
+site_url: https://thomas.codes
+display_url: https://thomas.codes
 
 collections:
 #markdown middleman blog example
