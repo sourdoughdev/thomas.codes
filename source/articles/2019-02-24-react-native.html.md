@@ -1,6 +1,6 @@
 ---
 title: React Native
-date: 2019-02-25T04:40:21.454Z
+date: 19/02/25
 category:
   - react-native
 newsletter:
