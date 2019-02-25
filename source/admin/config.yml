@@ -49,6 +49,22 @@ collections:
           ],
         }
 
+  - name: talks
+    label: Talk
+    folder: source/talks/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{title}}'
+    fields:
+      - {label: layout, name: layout, widget: hidden, default: "talk" }
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Date, name: date, widget: date, format: "YYYY/MM/DD"}
+      - {label: Published, name: published, widget: boolean, default: true}
+      - {label: Video, name: video, widget: string}
+      - {label: Where, name: where, widget: string }
+      - {label: Body, name: body, widget: markdown}
+
   - name: categories
     label: Category
     folder: source/categories/
