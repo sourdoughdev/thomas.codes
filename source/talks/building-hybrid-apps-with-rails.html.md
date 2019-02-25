@@ -3,6 +3,7 @@ title: Building Hybrid Apps with Rails - a Case Study
 date: 2016/05/03
 video: "https://www.youtube.com/embed/shplrnG48s0"
 where: "YYC.rb"
+published: true
 layout: talk
 ---
 

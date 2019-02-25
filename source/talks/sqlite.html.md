@@ -4,6 +4,7 @@ date: 2018/06/17
 video: "https://www.youtube.com/embed/Ld414EypQzg?start=3077"
 layout: talk
 where: "RailsConf"
+published: true
 year: 2018
 ---
 
