@@ -1,4 +1,4 @@
-const BlogPreview = ({ entry, widgetFor }) => {
+const ArticlePreview = ({ entry, widgetFor }) => {
   const data = entry.get('data').toJS()
   const date = dayjs(data.date).format('DD-MM-YY')
   return (
@@ -8,11 +8,6 @@ const BlogPreview = ({ entry, widgetFor }) => {
           <div className="title">
             <span className="date">{date}</span>
             <h1>{data.title}</h1>
-          </div>
-        </div>
-        <div className="row">
-          <div className="image">
-            <img src={data.image}/>
           </div>
         </div>
         <div className="row content">{widgetFor('body')}</div>
@@ -89,7 +84,7 @@ const NavigationPreview = ({ entry }) => {
   )
 }
 
-CMS.registerPreviewTemplate('blog', BlogPreview)
+CMS.registerPreviewTemplate('article', ArticlePreview)
 CMS.registerPreviewTemplate('product', ProductPreview)
 CMS.registerPreviewTemplate('home', HomePreview)
 CMS.registerPreviewTemplate('navigation', NavigationPreview)
