@@ -9,4 +9,6 @@ newsletter:
     again. <b>Subscribe and follow along!</b>
   headline: There's more to come
 ---
+![](/assets/img/uploads/thomas_social.png)
+
 test
