@@ -67,7 +67,6 @@ set :site, "https://thomas.codes"
 # Build
 configure :build do
   activate :minify_css
-  activate :minify_javascript, :ignore => "**/admin/**", compressor: ::Uglifier.new(mangle: true, compress: { drop_console: true }, output: {comments: :none})
   activate :minify_html
 
   activate :gzip
