@@ -1,6 +1,9 @@
 <%= partial 'layouts/includes/header' %>
   <div class="lh-copy">
     <div>
+      <div>
+        <a href="/" class="no-underline"><%= image_tag 'thomas.png', alt: 'Thomas McGoey-Smith', class: 'mb4 w-80' %></a>
+      </div>
       <h1 class="f1"><%= current_page.data.title %></h1>
       <%= yield %>
     </div>
