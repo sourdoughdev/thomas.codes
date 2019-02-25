@@ -8,6 +8,7 @@ const ArticlePreview = ({ entry, widgetFor }) => {
           <div className="title">
             <span className="date">{date}</span>
             <h1>{data.title}</h1>
+            <p>{data.categories}</p>
           </div>
         </div>
         <div className="row content">{widgetFor('body')}</div>

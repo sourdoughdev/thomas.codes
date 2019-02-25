@@ -18,7 +18,7 @@ collections:
     fields:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Publish Date, name: date, widget: datetime}
-      - {label: Category, name: category, widget: select, options: ["react-native"]}
+      - {label: Category, name: category, widget: relation, collection: categories, searchFields: ["code"], valueField: ["code"], displayFields: ["code"]}
       - {label: Body, name: body, widget: markdown}
       - { 
           label: Newsletter,
@@ -47,9 +47,11 @@ collections:
     format: frontmatter
     create: true
     slug: '{{code}}'
+    identifier_field: code
     fields:
-      - {label: Code, name: code, widget: string, required: true}
       - {label: Name, name: name, widget: string, required: true}
+      - {label: Code, name: code, widget: string, required: true}
+      - {label: Body, name: body, widget: markdown, required: false}
 
 
   - name: settings
