@@ -27,7 +27,7 @@ page "404.html", :directory_index => false
 activate :blog do |blog|
   blog.name = "articles"
   blog.permalink = ":title"
-  blog.sources = "articles/{year}/:title.html"
+  blog.sources = "articles/{year}-{month}-{day}-:title.html"
   blog.default_extension = ".md"
   blog.layout = "article"
   blog.paginate = false
@@ -47,7 +47,7 @@ end
 activate :blog do |blog|
   blog.name = "series"
   blog.permalink = "series/:series/:title"
-  blog.sources = "series/:series/:title.html"
+  blog.sources = "series/:series-:title.html"
   blog.default_extension = ".md"
   blog.layout = "series/post"
   blog.paginate = false
