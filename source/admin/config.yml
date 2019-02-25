@@ -58,3 +58,14 @@ collections:
       - {label: Name, name: name, widget: string, required: true}
       - {label: Code, name: code, widget: string, required: true}
       - {label: Body, name: body, widget: markdown, required: false}
+
+  - name: settings
+    label: Settings
+    files:
+      - file: data/settings/site.yml
+        label: Site
+        name: site
+        fields:
+          - label: About
+            name: about
+            widget: text
