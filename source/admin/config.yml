@@ -18,7 +18,7 @@ collections:
     fields:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Date, name: date, widget: date, format: "YYYY/MM/DD"}
-      - {label: Published, name: published, widget: boolean, default: false}
+      - {label: Published, name: published, widget: boolean, default: true}
       - {
           label: Category,
           name: category, 
