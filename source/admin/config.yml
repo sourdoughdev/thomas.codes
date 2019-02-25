@@ -18,7 +18,7 @@ collections:
     fields:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Publish Date, name: date, widget: datetime}
-      - {label: Category, name: category, widget: relation}
+      - {label: Category, name: category, widget: select, options: ["react-native"]}
       - {label: Body, name: body, widget: markdown}
       - { 
           label: Newsletter,
@@ -39,6 +39,19 @@ collections:
             },
           ],
         }
+
+  - name: categories
+    label: Category
+    folder: source/categories/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{code}}'
+    fields:
+      - {label: Code, name: code, widget: string, required: true}
+      - {label: Name, name: name, widget: string, required: true}
+
+
   - name: settings
     label: Settings
     files:
