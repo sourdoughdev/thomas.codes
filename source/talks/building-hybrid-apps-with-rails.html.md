@@ -1,9 +1,10 @@
 ---
+layout: talk
 title: Building Hybrid Apps with Rails - a Case Study
 date: 2016/05/03
-video: "https://www.youtube.com/embed/shplrnG48s0"
-where: "YYC.rb"
-layout: talk
+published: true
+video: 'https://www.youtube.com/embed/shplrnG48s0'
+where: YYC.rb
 ---
 
 [Download Slides](https://speakerdeck.com/tamcgoey/building-hybrid-apps-with-rails-a-case-study) or [Checkout the Code](https://github.com/tamcgoey/dasher-app-android)
