@@ -22,6 +22,9 @@ activate :directory_indexes
 
 page "404.html", :directory_index => false
 
+# Code Highlighting
+activate :syntax
+activate :gist
 
 # Blog
 activate :blog do |blog|

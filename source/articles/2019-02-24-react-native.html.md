@@ -1,7 +1,6 @@
 ---
-title: React Native 2
+title: React Native
 date: 2019/02/24
-published: false
 category:
   - react-native
 newsletter:
@@ -10,6 +9,8 @@ newsletter:
     again. <b>Subscribe and follow along!</b>
   headline: There's more to come
 ---
-Test 2
+![](/assets/img/uploads/thomas_social.png)
+
+test
 
 <%= gist "ryanburnette", "a22f81bd38710e82452a" %>

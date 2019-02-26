@@ -1,29 +1,33 @@
 ---
 title: "Thomas McGoey-Smith"
-layout: home
 ---
 
-<div class="fl w-100 pr5-l pr4-ns">
-  <div class="cf mb3">
-    <h2 class="f2">About</h2>
-    <p class="lh-copy">
-      <%= data.settings.site[:about] %>
-    </p>
-  </div>
-  <div class="mb5">
-    <h2 class="f2">Articles</h2>
-    <% blog('articles').articles.each_with_index do |article, i| %>
-      <div class="fl w-100 mb4">
-        <div class="cf w-100">
-          <a href="<%= article.url %>" class="no-underline hover-gray">
-            <p class="gray f5 mt0 mb2"><time><%= article.date.strftime('%b %e %Y') %></time></p>
-            <h2 class="f3 db mt0 mb0"><%= article.data.title %></h2>
-          </a>
+<div class="fl w-100 bg-near-white">
+  <div class="fl w-100 lh-copy f5">
+    <div class="fl w-100 mb2">
+      <div class="w-90 w-50-ns w-50-l w-70-m center mw8 cf">
+        <div class="fl w-100">
+          <%= data.settings.site[:about] %>
         </div>
       </div>
-    <% end %>
-  </div>
-  <div class="fl mb5 mt3">
-    <%= newsletter(headline: "Don't miss out!", body: "I'll send you out my articles before they're published here.") %>
+    </div>
   </div>
 </div>
+
+<div class="fl w-100 mb2">
+    <div class="w-90 w-50-ns w-50-l w-70-m center mw8 cf">
+      <div class="lh-copy">
+        <h2 class="f2">Articles</h2>
+        <% blog('articles').articles.each_with_index do |article, i| %>
+          <div class="fl w-100 mb4">
+            <div class="cf w-100">
+              <a href="<%= article.url %>" class="no-underline hover-gray">
+                <p class="gray f5 mt0 mb2"><time><%= article.date.strftime('%b %e %Y') %></time></p>
+                <h2 class="f3 db mt0 mb0"><%= article.data.title %></h2>
+              </a>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>

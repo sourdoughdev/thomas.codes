@@ -1,30 +1,36 @@
 @import "tachyons";
 @import "fonts";
+@import "code";
 
 body {
-  background: #FFFCF7;
-  font-size: 20px;
+  font-size: 21px;
+  line-height: 30px;
 }
 
-.bar, .bg-bar {
-  background: #1567C8;
-}
+// .bar, .bg-bar {
+//   background: #1567C8;
+// }
 
-.bg-blue {
-  background: #132E51;
-}
+// .bg-blue {
+//   background: #132E51;
+// }
 
-.blue, a, .link {
-  color: #155EB5;
-  border-bottom: 2px solid #1567C8!important;
-}
+// .blue, a, .link {
+//   color: #155EB5;
+//   border-bottom: 2px solid #1567C8!important;
+// }
 
-.no-underline, a img, img, a > img {
-  border: none;
-  border-bottom: none!important; 
-}
+// .no-underline, a img, img, a > img {
+//   border: none;
+//   border-bottom: none!important; 
+// }
 
-/* Fonts */
+// // p {
+// //   margin: 0;
+// //   padding: 0;
+// // }
+
+// /* Fonts */
 
 $system-fonts: -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
@@ -35,67 +41,71 @@ $system-fonts: -apple-system, BlinkMacSystemFont,
                sans-serif; 
 
 .sans-serif {
-  font-family: 'concourse_t3regular', $system-fonts;
-  font-weight: normal;
+  font-family: 'Post Grotesk', $system-fonts;
+  font-weight: 400;
 }
 
-a, .link {
-  text-decoration: none;
-  border-bottom: 2px solid #132E51;
+i, em {
+  font-weight: 400;
 }
 
-nav a, nav .link {
-  border: none;
-}
+// a, .link {
+//   text-decoration: none;
+//   border-bottom: 2px solid #132E51;
+// }
 
-a:focus, a:hover, .link:hover, .hover-black:hover {
-  border-color: #777;
-}
+// nav a, nav .link {
+//   border: none;
+// }
 
-p a, .link {
-  opacity: 1; }
+// a:focus, a:hover, .link:hover, .hover-black:hover {
+//   border-color: #777;
+// }
 
-p a, .link, a:focus, .link:focus, a:hover, .link:hover {
-  -webkit-transition: opacity .15s ease-in;
-  transition: opacity .15s ease-in; }
+// p a, .link {
+//   opacity: 1; }
 
-p a:focus, .link:focus, p a:hover, .link:hover {
-  opacity: .5; }
+// p a, .link, a:focus, .link:focus, a:hover, .link:hover {
+//   -webkit-transition: opacity .15s ease-in;
+//   transition: opacity .15s ease-in; }
 
-p a:active, .link:active {
-  opacity: .8;
-  -webkit-transition: opacity .15s ease-out;
-  transition: opacity .15s ease-out; }
+// p a:focus, .link:focus, p a:hover, .link:hover {
+//   opacity: .5; }
 
-.b, .bold, strong, b {
-  font-family: 'concourse_t3bold', $system-fonts;
-  font-weight: bold;
-  font-style: normal;
-}
+// p a:active, .link:active {
+//   opacity: .8;
+//   -webkit-transition: opacity .15s ease-out;
+//   transition: opacity .15s ease-out; }
 
-.b > i, .bold > i, b > i {
-  font-family: 'concourse_t3bolditalic', $system-fonts;
-  font-weight: bold;
-  font-style: italic;
-}
+// // .b, .bold, strong, b {
+// //   font-family: 'concourse_t3bold', $system-fonts;
+// //   font-weight: bold;
+// //   font-style: normal;
+// // }
 
-.i, .italic, i {
-  font-family: 'concourse_t3italic', $system-fonts;
-  font-weight: normal;
-  font-style: italic;
-}
+// // .b > i, .bold > i, b > i {
+// //   font-family: 'concourse_t3bolditalic', $system-fonts;
+// //   font-weight: bold;
+// //   font-style: italic;
+// // }
 
-nav, .upcase, nav a:hover {
-  font-family: 'concourse_c6regular', $system-fonts;
-  font-weight: normal;
-}
+// // .i, .italic, i {
+// //   font-family: 'concourse_t3italic', $system-fonts;
+// //   font-weight: normal;
+// //   font-style: italic;
+// // }
+
+// // nav, .upcase, nav a:hover {
+// //   font-family: 'concourse_c6regular', $system-fonts;
+// //   font-weight: normal;
+// // }
 
 
 
-h1, h2, h3, h4, h5, h6, .f1, .f2, .f3, .f4, .f5 {
-  font-family: 'concourse_t3regular', $system-fonts;
-  font-weight: normal;
-}
+// // h1, h2, h3, h4, h5, h6, .f1, .f2, .f3, .f4, .f5 {
+// //   font-family: 'concourse_t3regular', $system-fonts;
+// //   font-weight: normal;
+// // }
 
 
 /* https://gist.github.com/jaicab/8799764 */

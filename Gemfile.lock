@@ -79,9 +79,14 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-gist (0.1.1)
+      middleman-core (>= 4)
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
+    middleman-syntax (3.0.0)
+      middleman-core (>= 3.2)
+      rouge (~> 2.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     nokogiri (1.8.3)
@@ -99,6 +104,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redcarpet (3.4.0)
+    rouge (2.2.1)
     sass (3.4.25)
     servolux (0.13.0)
     temple (0.8.0)
@@ -118,7 +124,9 @@ DEPENDENCIES
   middleman
   middleman-autoprefixer
   middleman-blog
+  middleman-gist (= 0.1.1)
   middleman-minify-html
+  middleman-syntax
   nokogiri
   redcarpet
   tzinfo-data

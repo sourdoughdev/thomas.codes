@@ -14,7 +14,7 @@ collections:
   - name: articles
     label: Article
     folder: source/articles/
-    extension: .html.md
+    extension: .html.md.erb
     format: frontmatter
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{title}}'
@@ -22,6 +22,7 @@ collections:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Date, name: date, widget: date, format: "YYYY/MM/DD"}
       - {label: Published, name: published, widget: boolean, default: true, required: false}
+      - {label: Background Color, name: background_color, widget: string, required: false}
       - {
           label: Category,
           name: category, 
@@ -52,7 +53,7 @@ collections:
   - name: talks
     label: Talk
     folder: source/talks/
-    extension: .html.md
+    extension: .html.md.erb
     format: frontmatter
     create: true
     slug: '{{title}}'
@@ -68,7 +69,7 @@ collections:
   - name: categories
     label: Category
     folder: source/categories/
-    extension: .html.md
+    extension: .html.md.erb
     format: frontmatter
     create: true
     slug: '{{code}}'
