@@ -36,3 +36,4 @@ If anything now I shouldn't have any excuses to write more :)
 Here's an example of what writing this article is like:
 
 ![Writing this post via Netlify CMS](/assets/img/uploads/screen-shot-2019-02-25-at-9.20.29-pm.png "Netlify Preview")
+
