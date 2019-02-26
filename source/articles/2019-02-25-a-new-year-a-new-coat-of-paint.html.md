@@ -19,7 +19,7 @@ So... After spending quite a bit of time tinkering, I decided why not slap some 
 
 If anything, next year there will be a whole lot less of work to do.
 
----
+- - -
 
 How do things work now?
 
@@ -29,3 +29,10 @@ Next, I've adopted something a little bit newer.
 
 [Netlify CMS](https://www.netlifycms.org/), it's an amazing little CMS built right on top of GitHub + [Netlify](http://netlify.com).
 
+It's suprisingly simple to setup, and a great way to blog.
+
+If anything now I shouldn't have any excuses to write more :)
+
+Here's an example of what writing this article is like:
+
+![Writing this post via Netlify CMS](/assets/img/uploads/screen-shot-2019-02-25-at-9.20.29-pm.png "Netlify Preview")
