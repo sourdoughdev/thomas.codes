@@ -1,29 +1,39 @@
 ---
 title: "Thomas McGoey-Smith"
-layout: home
 ---
 
-<div class="fl w-100 pr5-l pr4-ns">
-  <div class="cf mb3">
-    <h2 class="f2">About</h2>
-    <p class="lh-copy">
-      <%= data.settings.site[:about] %>
-    </p>
-  </div>
-  <div class="mb5">
-    <h2 class="f2">Articles</h2>
-    <% blog('articles').articles.each_with_index do |article, i| %>
-      <div class="fl w-100 mb4">
-        <div class="cf w-100">
-          <a href="<%= article.url %>" class="no-underline hover-gray">
-            <p class="gray f5 mt0 mb2"><time><%= article.date.strftime('%b %e %Y') %></time></p>
-            <h2 class="f3 db mt0 mb0"><%= article.data.title %></h2>
-          </a>
+<div class="fl w-100 bg-near-white">
+  <div class="fl w-100 lh-copy f5">
+    <div class="fl w-100 mb2">
+      <div class="w-90 w-50-ns w-50-l w-70-m center mw8 cf">
+        <div class="fl w-20 pt4 dn dib-l">
+          <a href="/" class="no-underline"><%= image_tag 'thomas.png', alt: 'Thomas McGoey-Smith', class: '' %></a>
+        </div>
+        <div class="fl w-100 w-70-l pl4-l">
+          <p><b class="fw6 f3">👋 Hey there! I'm Thomas.</b></p>
+          <p>I'm currently living and working in <a href="https://medium.com/@ryanpaulgibson/ottawas-not-boring-you-re-just-lazy-f5f2dd9396fb" class="link no-underline dim">Ottawa, Canada</a> as a <a href="https://github.com/tamcgoey" class="link no-underline dim">software writer</a>.</p>
+          <p>During the day, I ship code to help <a href="https://shopify.com" class="link no-underline dim">make commerce better for everyone</a> and at night, I'm seen running a <a href="https://www.instagram.com/tamcgoey" class="link no-underline dim">bakery out of my apartment</a>.</p>
+          <p>If you ever want to get in touch, hit me up at <a href="hey@thomas.codes" class="link no-underline dim">hey@thomas.codes</a> <em>(or <a href="https://twitter.com/tamcgoey" class="link no-underline dim">tweet</a> at me)</em>.</p>
         </div>
       </div>
-    <% end %>
-  </div>
-  <div class="fl mb5 mt3">
-    <%= newsletter(headline: "Don't miss out!", body: "I'll send you out my articles before they're published here.") %>
+    </div>
   </div>
 </div>
+
+<div class="fl w-100 mb2">
+    <div class="w-90 w-50-ns w-50-l w-70-m center mw8 cf">
+      <div class="lh-copy">
+        <h2 class="f2">Articles</h2>
+        <% blog('articles').articles.each_with_index do |article, i| %>
+          <div class="fl w-100 mb4">
+            <div class="cf w-100">
+              <a href="<%= article.url %>" class="no-underline hover-gray">
+                <p class="gray f5 mt0 mb2"><time><%= article.date.strftime('%b %e %Y') %></time></p>
+                <h2 class="f3 db mt0 mb0"><%= article.data.title %></h2>
+              </a>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>

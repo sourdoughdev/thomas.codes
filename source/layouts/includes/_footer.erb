@@ -1,12 +1,12 @@
-        <div class="dn db-ns fl w-100 sans-serif f6 gray i mv4">
-          <p>&copy; Thomas McGoey-Smith (2014 - 2019). <%= link_to 'RSS', '/rss.xml' %>.</p>
+<div class="fl w-100 bg-near-white mt5">
+      <div class="w-90 w-50-ns w-50-l w-70-m center mw8 pb6 pt2">
+        <div class="fl w-100 lh-copy">
+          <%= newsletter(headline: current_page.data.newsletter&.headline || "Found something Interesting? Subscribe for Updates.", body: current_page.data.newsletter&.body || "Give me your email, and I'll send you my latest articles first.") %>
+        </div>
+        <div class="fl w-100 pl4 pa2 mt5 center">
+          <p class="f6 i">&copy; Thomas McGoey-Smith (2014 - 2019). <%= link_to 'RSS', '/rss.xml' %>.</p>
         </div>
       </div>
-      <footer>
-        <div class="dn-ns db">
-          <%= partial 'layouts/includes/footer_nav' %>
-        </div>
-      </footer>
     </div>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112029728-2"></script>
