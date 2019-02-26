@@ -1,14 +1,59 @@
-<%= partial 'layouts/includes/header' %>
-  <div class="lh-copy">
-    <div>
-      <div class="fr p i gray"><%= current_page.date.strftime('%b %d, %Y') %></div>
-      <h1 class="f1 dib"><%= current_page.data.title %></h1>
-      <%= yield %>
+<% if false %>
+  <%= partial 'layouts/includes/header' %>
+    <div class="lh-copy">
+      <div>
+        <div class="fr p i gray"><%= current_page.date.strftime('%b %d, %Y') %></div>
+        <h1 class="f1 dib"><%= current_page.data.title %></h1>
+        <%= yield %>
+      </div>
+
+      <div class="mt5">
+        <%= newsletter(headline: current_page.data.newsletter&.headline || "Found something Interesting? Subscribe for Updates.", body: current_page.data.newsletter&.body || "Give me your email, and I'll send you my latest articles first.") %>
+      </div>
+
+    </div>
+  <%= partial 'layouts/includes/footer' %>
+<% end %>
+
+<!doctype html>
+<html>
+  <head>
+    <%= partial 'layouts/includes/meta' %>
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body class="sans-serif">
+    <div class="fl w-100 bg-black pa3 ph4-ns">
+      <div class="fl white"><%= link_to 'Thomas McGoey-Smith', '/', class: 'fw5 link no-underline white dim' %></div>
+
+      <div class="fr">
+        <%= link_to 'Articles', '/articles', class: 'link white dim mr2' %>
+        <%= link_to 'About', '/about', class: 'link white dim' %>
+      </div>
     </div>
 
-    <div class="mt5">
-      <%= newsletter(headline: current_page.data.newsletter&.headline || "Found something Interesting? Subscribe for Updates.", body: current_page.data.newsletter&.body || "Give me your email, and I'll send you my latest articles first.") %>
+    <div class="fl w-100 bg-yellow mb3">
+      <div class="w-90 w-50-ns w-50-l w-70-m center mw8">
+        <h1 class="pt3 f1 dib"><%= current_page.data.title %></h1>
+      </div>
     </div>
 
-  </div>
-<%= partial 'layouts/includes/footer' %>
+    <div class="fl w-100 mb2">
+      <div class="w-90 w-50-ns w-50-l w-70-m center mw8">
+        <div class="lh-copy">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+
+    <div class="fl w-100 bg-near-white mt3">
+      <div class="w-90 w-50-ns w-50-l w-70-m center mw8 pb6 pt2">
+        <div class="fl w-100 lh-copy">
+          <%= newsletter(headline: current_page.data.newsletter&.headline || "Found something Interesting? Subscribe for Updates.", body: current_page.data.newsletter&.body || "Give me your email, and I'll send you my latest articles first.") %>
+        </div>
+        <div class="fl w-100 pl4 pa2 mt5 center">
+          <p class="f6 i">&copy; Thomas McGoey-Smith (2014 - 2019). <%= link_to 'RSS', '/rss.xml' %>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
