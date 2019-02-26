@@ -19,9 +19,9 @@ So... After spending quite a bit of time tinkering, I decided why not slap some 
 
 If anything, next year there will be a whole lot less of work to do.
 
-- - -
 
-How do things work now?
+
+## How do things work now?
 
 I'm still using [trusty old middleman](https://middlemanapp.com/). For some reason my brain just thinks better in middleman, and I've been using it for the last few years.
 
