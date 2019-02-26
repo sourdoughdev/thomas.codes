@@ -5,9 +5,11 @@
     <%= stylesheet_link_tag "site" %>
   </head>
   <body class="sans-serif">
-    <div class="bar w-100 h1 mb2"></div>
-    <div class="cf center w-100 w-80-l w-70-l pl5-l">
-      <header class="fl dn db-m db-l w-20-ns">
-        <%= partial 'layouts/includes/nav' %>
-      </header>
-      <div class="fl w-100 w-80-ns w-70-l pa3 pl5-m pl4-l">
+    <div class="fl w-100 bg-black pa3 ph4-ns">
+      <div class="fl white"><%= link_to 'Thomas McGoey-Smith', '/', class: 'fw5 link no-underline white dim' %></div>
+
+      <div class="fr">
+        <%= link_to 'Articles', '/articles', class: 'link white dim mr2' %>
+        <%= link_to 'About', '/about', class: 'link white dim dn dib-ns' %>
+      </div>
+    </div>

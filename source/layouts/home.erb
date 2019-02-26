@@ -1,17 +1,3 @@
-<!doctype html>
-<html>
-  <head>
-    <%= partial 'layouts/includes/meta' %>
-    <%= stylesheet_link_tag "site" %>
-  </head>
-  <body class="sans-serif">
-    <div class="bar w-100 h1 mb2"></div>
-    <div class="cf center w-100 w-80-l pl5-l">
-      <header class="fl dn db-m db-l w-20-ns">
-        <%= partial 'layouts/includes/nav' %>
-      </header>
-      <div class="fl w-100 w-80-ns pa3 pl5-m pl4-l">
-    <%= yield %>
-      
-  
+<%= partial 'layouts/includes/header' %>
+  <%= yield %>  
 <%= partial 'layouts/includes/footer' %>
