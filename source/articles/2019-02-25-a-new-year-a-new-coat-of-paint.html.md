@@ -11,6 +11,7 @@ newsletter:
     again. <b>Subscribe and follow along!</b>
   headline: There's more to come
 ---
+
 This past week I've experimented a bit with getting up a new version of the site.
 
 Last year my goal was simple - write _(well write a lot)._ Unfortunately things didn't work out as planned.
