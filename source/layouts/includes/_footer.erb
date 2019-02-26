@@ -3,7 +3,12 @@
         <div class="fl w-100 lh-copy">
           <%= newsletter(headline: current_page.data.newsletter&.headline || "Found something Interesting? Subscribe for Updates.", body: current_page.data.newsletter&.body || "Give me your email, and I'll send you my latest articles first.") %>
         </div>
-        <div class="fl w-100 pl4 pa2 mt5 center">
+        <div class="fl w-100 pa3 pa4-ns mt5 center">
+          <%= link_to 'Articles', '/articles', class: 'black no-underline hover-gray f6 mr1' %>
+          <%= link_to 'Talks', '/talks', class: 'black no-underline hover-gray f6 mr1' %>
+          <%= link_to 'Newsletter', '/newsletter', class: 'black no-underline hover-gray f6 mr1' %>
+          <%= link_to 'About', '/about', class: 'black no-underline hover-gray f6' %>
+
           <p class="f6 i">&copy; Thomas McGoey-Smith (2014 - 2019). <%= link_to 'RSS', '/rss.xml' %>.</p>
         </div>
       </div>
