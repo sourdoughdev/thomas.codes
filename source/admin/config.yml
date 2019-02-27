@@ -29,6 +29,7 @@ collections:
           widget: list,
           allow_add: true
         }
+      - {label: Blurb, name: blurb, widget: text, required: true}
       - {label: Body, name: body, widget: markdown}
       - { 
           label: Newsletter,
