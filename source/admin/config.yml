@@ -26,8 +26,11 @@ collections:
       - {
           label: Category,
           name: category, 
-          widget: list,
-          allow_add: true
+          widget: relation,
+          collection: categories,
+          searchFields: code,
+          valueField: code,
+          displayFields: [name]
         }
       - {label: Blurb, name: blurb, widget: text, required: true}
       - {label: Body, name: body, widget: markdown}
