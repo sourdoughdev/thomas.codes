@@ -28,7 +28,7 @@ collections:
           name: category, 
           widget: relation,
           collection: categories,
-          searchFields: code,
+          searchFields: [code],
           valueField: code,
           displayFields: [name]
         }
