@@ -4,7 +4,7 @@ backend:
 media_folder: source/assets/img/uploads
 public_folder: /assets/img/uploads
 
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 site_url: https://thomas.codes
 display_url: https://thomas.codes
