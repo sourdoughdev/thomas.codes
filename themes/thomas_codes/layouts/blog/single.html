@@ -1,0 +1,89 @@
+{{ partial "header.html" . }}
+<body
+  lang="{{ .Site.LanguageCode }}"
+  class="sans-serif"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  {{ partial "bar.html" . }}
+  <div class="w-90 w-60-ns center center-ns mb2 mb5-ns">
+    <span class="b">/ </span>
+    <a href="{{ .Site.BaseURL  }}" class="b bb bw1 pb1 no-underline black">{{ .Site.Title }}</a>
+    <span class="b"> / </span>
+    <a href="/blog" class="b bb bw1 pb1 no-underline black">blog</a>
+
+    <section id="main" class="mt5">
+      <h1 itemprop="name" id="title">{{ .Title }}</h1>
+      <span class="f6 gray">{{ .Date.Format "January 2, 2006" }}</span>
+
+        <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+          {{ .Content }}
+        </article>
+
+        <!-- last modified note -->
+        <span class="f6 gray mv3" title="Lastmod: {{ .Lastmod.Format "January 2, 2006" }}. Published at: {{ .PublishDate.Format "2006-01-02" }}.">
+          {{ if ne .Lastmod .PublishDate }}
+            <span class="i">last modified</span> {{ dateFormat "January 2, 2006" .Lastmod }}
+          {{ end }}
+        </span>
+
+
+
+        {{ if and (.Site.Taxonomies.series) (isset .Params "series") }}
+          <section class="mt4 bg-washed-yellow ph4-ns ph3 pv1">
+            {{ $readMore := ":wave:" }}
+            {{ $series := .Params.series | urlize}}
+            <h3 class="mb1-ns ">{{ $readMore | emojify }} Looking for more? </h3>
+            
+            <h4 class="mb4-ns mb3">Here's some related posts in the <a href="/series/{{ $series }}" class="b bb bw1 pb1 no-underline black">{{ .Params.Series }}</a> series...</h4>
+        
+            {{ $posts := index .Site.Taxonomies.series $series }}
+          
+            {{ if (gt ($posts | len) 1)}}
+              <ul class="list pl0">
+                {{ range where $posts "Title" "!=" .Title }}
+                  <li class="list pl0 lh-copy mb3">
+                    <a
+                      class="f4 b dib black no-underline"
+                      href="{{ .Permalink}}"
+                      >{{ .Title }}</a
+                    >
+                    <span class="f6 gray">{{ .Date.Format "January 2, 2006" }}</span>
+                  </li>
+                {{ end }}
+              </ul>  
+            {{ else }}
+              <div class="ph2 i">
+                No follow up posts yet. Check back soon!
+              </div>    
+            {{ end }}
+          </section>
+        {{ end }}
+
+
+        <div class="fl w-100 mt4">
+          <p class="tc f4 b">{{ ":mailbox:" | emojify }} Want an update when new articles are posted?</p>
+          <form action="https://buttondown.email/api/emails/embed-subscribe/thomas.codes"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/thomas.codes', 'popupwindow')">
+            <div class="fl w-100 ph6-ns ph4-m mv3 pa3 center">
+              <div class="fl w-100">
+                <input type="email" class="f6 f5-l input-reset fl black-80 bg-white ba b--light-silver pa3 lh-solid w-100 br2" placeholder="newsletter@thomas.codes" type="text" name="email" value="" id="email-address" required>
+              </div>
+    
+              <input type="hidden" value="1" name="embed"/>
+    
+              <div class="fl w-100 mt3">
+                <input class="no-underline f5 tc db w-100 pv3 bg-animate bg-black hover-bg-dark-gray white br2 pointer bn" type="submit" value="Subscribe">
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+    {{ partial "comments" . }}
+    {{ partial "footer.html" . }}
+    
+  </div>  
+</body>
