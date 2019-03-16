@@ -1,0 +1,21 @@
+<div class="fl w-100 mt4">
+  {{ if not "hideTitle"  }}
+    <p class="tc f4 b">{{ ":mailbox:" | emojify }} Want an update when new articles are posted?</p>
+  {{ end }}
+  <form action="https://buttondown.email/api/emails/embed-subscribe/thomas.codes"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.email/thomas.codes', 'popupwindow')">
+    <div class="fl w-100 ph6-ns ph4-m mv3 pa3 center">
+      <div class="fl w-100">
+        <input type="email" class="f6 f5-l input-reset fl black-80 bg-white ba b--light-silver pa3 lh-solid w-100 br2" placeholder="newsletter@thomas.codes" type="text" name="email" value="" id="email-address" required>
+      </div>
+
+      <input type="hidden" value="1" name="embed"/>
+
+      <div class="fl w-100 mt3">
+        <input class="no-underline f5 tc db w-100 pv3 bg-animate bg-black hover-bg-dark-gray white br2 pointer bn" type="submit" value="Subscribe">
+      </div>
+    </div>
+  </form>
+</div>

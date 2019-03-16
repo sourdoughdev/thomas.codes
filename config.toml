@@ -1,0 +1,59 @@
+baseurl = "https://thomas.codes"
+title = "Thomas McGoey-Smith"
+theme ="thomas_codes"
+languageCode = "en-us"
+googleAnalytics = "UA-112029728-2"
+enableEmoji = true 
+copyright = "© 2014-19 <a href='https://thomas.codes'>Thomas McGoey-Smith</a> + <a href='/rss.xml'>rss</a> + <a href='/credits'>credits</a>."
+description = "👋 Hi, I'm Thomas. During the day, I ship code to help make commerce better for everyone and at night, I'm seen running a bakery out of my apartment."
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  talks = "talks"
+
+[params]
+  titleEmoji = ":tada:"
+  twitter = "tamcgoey"
+
+[Permalinks]
+  blog = ":slug"
+
+[[params.menu]]
+  name = "blog"
+  url = "blog/"
+
+[[params.menu]]
+  name = "series"
+  url = "series/"
+
+[[params.menu]]
+  name = "talks"
+  url = "talks/"
+
+[[params.menu]]
+  name = "subscribe"
+  url = "subscribe/"
+
+[[params.menu]]
+  name = "about"
+  url = "about/"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[outputs]
+  home = [ "HTML", "RSS" ]
+
+[outputFormats]
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "rss"
