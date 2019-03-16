@@ -7,29 +7,6 @@ body {
   line-height: 30px;
 }
 
-// .bar, .bg-bar {
-//   background: #1567C8;
-// }
-
-// .bg-blue {
-//   background: #132E51;
-// }
-
-// .blue, a, .link {
-//   color: #155EB5;
-//   border-bottom: 2px solid #1567C8!important;
-// }
-
-// .no-underline, a img, img, a > img {
-//   border: none;
-//   border-bottom: none!important; 
-// }
-
-// // p {
-// //   margin: 0;
-// //   padding: 0;
-// // }
-
 // /* Fonts */
 
 $system-fonts: -apple-system, BlinkMacSystemFont,
@@ -41,7 +18,7 @@ $system-fonts: -apple-system, BlinkMacSystemFont,
                sans-serif; 
 
 .sans-serif {
-  font-family: 'Post Grotesk', $system-fonts;
+  font-family: 'Inter', $system-fonts;
   font-weight: 400;
 }
 
