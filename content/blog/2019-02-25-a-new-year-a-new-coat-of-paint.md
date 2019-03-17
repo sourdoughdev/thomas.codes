@@ -1,9 +1,8 @@
 +++
 title = "A new year, a new coat of paint"
 description = ""
-tags = ["development"]
-categories = ["Development"]
-# series = []
+tags = ["general"]
+series = ["hello"]
 date = 2019-02-25
 +++
 
