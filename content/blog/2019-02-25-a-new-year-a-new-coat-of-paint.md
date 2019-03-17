@@ -2,7 +2,7 @@
 title = "A new year, a new coat of paint"
 description = ""
 tags = ["general"]
-series = ["hello"]
+# series = ["hello"]
 date = 2019-02-25
 +++
 
