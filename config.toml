@@ -14,7 +14,7 @@ description = "👋 Hi, I'm Thomas. During the day, I ship code to help make com
   talks = "talks"
 
 [params]
-  titleEmoji = ":tada:"
+  titleEmoji = ":bread:"
   twitter = "tamcgoey"
 
 [Permalinks]
