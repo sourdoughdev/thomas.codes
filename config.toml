@@ -18,11 +18,11 @@ description = "👋 Hi, I'm Thomas. During the day, I ship code to help make com
   twitter = "tamcgoey"
 
 [Permalinks]
-  blog = ":slug"
+  articles = ":slug"
 
 [[params.menu]]
-  name = "blog"
-  url = "blog/"
+  name = "articles"
+  url = "articles/"
 
 [[params.menu]]
   name = "series"
